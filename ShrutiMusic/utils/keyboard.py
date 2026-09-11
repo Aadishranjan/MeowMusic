@@ -20,24 +20,22 @@
 # Email: badboy809075@gmail.com
 
 
-from pykeyboard import InlineKeyboard
-from pyrogram.types import InlineKeyboardButton as Ikb
+from pyrogram.types import InlineKeyboardButton as Ikb, InlineKeyboardMarkup
 
 from .functions import get_urls_from_text as is_url
 
 
 def keyboard(buttons_list, row_width: int = 2):
-    buttons = InlineKeyboard(row_width=row_width)
     data = [
         (
-            Ikb(text=str(i[0]), callback_data=str(i[1]))
-            if not is_url(i[1])
-            else Ikb(text=str(i[0]), url=str(i[1]))
+            Ikb(text=str(item[0]), callback_data=str(item[1]))
+            if not is_url(item[1])
+            else Ikb(text=str(item[0]), url=str(item[1]))
         )
-        for i in buttons_list
+        for item in buttons_list
     ]
-    buttons.add(*data)
-    return buttons
+    rows = [data[index : index + row_width] for index in range(0, len(data), row_width)]
+    return InlineKeyboardMarkup(rows)
 
 
 def ikb(data: dict, row_width: int = 2):

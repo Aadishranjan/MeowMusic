@@ -20,9 +20,8 @@
 # Email: badboy809075@gmail.com
 
 
-from pykeyboard import InlineKeyboard
 from pyrogram import filters
-from pyrogram.types import InlineKeyboardButton, Message
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from ShrutiMusic import app
 from ShrutiMusic.utils.database import get_lang, set_lang
@@ -32,9 +31,7 @@ from strings import get_string, languages_present
 
 
 def lanuages_keyboard(_):
-    keyboard = InlineKeyboard(row_width=2)
-    keyboard.add(
-        *[
+    buttons = [
             (
                 InlineKeyboardButton(
                     text=languages_present[i],
@@ -42,16 +39,16 @@ def lanuages_keyboard(_):
                 )
             )
             for i in languages_present
-        ]
-    )
-    keyboard.row(
+    ]
+    rows = [buttons[index : index + 2] for index in range(0, len(buttons), 2)]
+    rows.append([
         InlineKeyboardButton(
             text=_["BACK_BUTTON"],
             callback_data=f"settingsback_helper",
         ),
         InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close"),
-    )
-    return keyboard
+    ])
+    return InlineKeyboardMarkup(rows)
 
 
 @app.on_message(filters.command(["lang", "setlang", "language"]) & ~BANNED_USERS)

@@ -19,7 +19,12 @@
 # Contact for permissions:
 # Email: badboy809075@gmail.com
 
+from pyrogram import enums
 from pyrogram.types import InlineKeyboardButton
+
+
+# Kurigram 2.2.24 supports Telegram colored inline buttons and custom emoji icons.
+PREMIUM_BUTTON_EMOJI_ID = '6082241885244492701'
 import config
 from ShrutiMusic import app
 
@@ -27,7 +32,10 @@ def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"
+                text=_["S_B_1"],
+                url=f"https://t.me/{app.username}?startgroup=true",
+                icon_custom_emoji_id=PREMIUM_BUTTON_EMOJI_ID,
+                style=enums.ButtonStyle.PRIMARY,
             ),
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
         ],
@@ -44,6 +52,8 @@ def private_panel(_):
             InlineKeyboardButton(
                 text=_["S_B_3"],
                 url=f"https://t.me/{app.username}?startgroup=true",
+                icon_custom_emoji_id=PREMIUM_BUTTON_EMOJI_ID,
+                style=enums.ButtonStyle.PRIMARY,
             )
         ],
         [
