@@ -84,3 +84,82 @@ class Nand(Client):
 
     async def stop(self):
         await super().stop()
+    # Telegram Premium custom emoji used throughout bot responses. The text
+    # inside each tag is a fallback for clients that cannot display it.
+    PREMIUM_EMOJI = {
+        "👋": "5298590020796429445",
+        "😱": "5298501840822875885",
+        "⚙️": "5341715473882955310",
+        "👇": "5463390772097199381",
+        "✅": "5980930633298350051",
+        "🥂": "6172657075743625817",
+        "❌": "5796615668023435743",
+        "⚡️": "6124898345082165755",
+        "✨": "6046240412807469383",
+        "🎵": "5463107823946717464",
+        "🌸": "5449714299146629735",
+        "📸": "5447152480003567767",
+        "📹": "5192794260352541359",
+        "❄️": "5449449325434266744",
+        "⏱️": "5382194935057372936",
+        "🥀": "5208923808169222461",
+        "➕": "4956507094124594921",
+    }
+
+    @classmethod
+    def _premium_emoji(cls, value, parse_mode=None):
+        """Convert configured Unicode emoji to Telegram custom-emoji HTML."""
+        if not isinstance(value, str) or "<emoji id=" in value:
+            return value
+
+        if parse_mode and str(parse_mode).lower() not in {"html", "parsemode.html"}:
+            return value
+
+        for emoji, emoji_id in cls.PREMIUM_EMOJI.items():
+            value = value.replace(
+                emoji, f'<emoji id="{emoji_id}">{emoji}</emoji>'
+            )
+        return value
+
+    async def send_message(self, chat_id, text, parse_mode=None, *args, **kwargs):
+        return await super().send_message(
+            chat_id,
+            self._premium_emoji(text, parse_mode),
+            parse_mode=parse_mode,
+            *args,
+            **kwargs,
+        )
+
+    async def send_photo(self, chat_id, photo, caption="", parse_mode=None, *args, **kwargs):
+        return await super().send_photo(
+            chat_id,
+            photo,
+            caption=self._premium_emoji(caption, parse_mode),
+            parse_mode=parse_mode,
+            *args,
+            **kwargs,
+        )
+
+    async def edit_message_text(
+        self, chat_id, message_id, text, parse_mode=None, *args, **kwargs
+    ):
+        return await super().edit_message_text(
+            chat_id,
+            message_id,
+            self._premium_emoji(text, parse_mode),
+            parse_mode=parse_mode,
+            *args,
+            **kwargs,
+        )
+
+    async def edit_message_caption(
+        self, chat_id, message_id, caption="", parse_mode=None, *args, **kwargs
+    ):
+        return await super().edit_message_caption(
+            chat_id,
+            message_id,
+            caption=self._premium_emoji(caption, parse_mode),
+            parse_mode=parse_mode,
+            *args,
+            **kwargs,
+        )
