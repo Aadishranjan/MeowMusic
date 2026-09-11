@@ -46,7 +46,7 @@ def lanuages_keyboard(_):
             text=_["BACK_BUTTON"],
             callback_data=f"settingsback_helper",
         ),
-        InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close"),
+        InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close", icon_custom_emoji_id="6172657075743625817"),
     ])
     return InlineKeyboardMarkup(rows)
 

@@ -57,6 +57,7 @@ def help_pannel_page1(_, START: Union[bool, int] = None):
                 InlineKeyboardButton(
                     text=_["BACK_BUTTON"] if START else _["CLOSE_BUTTON"],
                     callback_data="settingsback_helper" if START else "close",
+                    icon_custom_emoji_id="6172657075743625817",
                 ),
                 InlineKeyboardButton(text="⏭", callback_data="help_page_2"),
             ],
@@ -89,6 +90,7 @@ def help_pannel_page2(_, START: Union[bool, int] = None):
                 InlineKeyboardButton(
                     text=_["BACK_BUTTON"] if START else _["CLOSE_BUTTON"],
                     callback_data="settingsback_helper" if START else "close",
+                    icon_custom_emoji_id="6172657075743625817",
                 ),
                 InlineKeyboardButton(text="⏭", callback_data="help_page_3"),
             ],
@@ -121,6 +123,7 @@ def help_pannel_page3(_, START: Union[bool, int] = None):
                 InlineKeyboardButton(
                     text=_["BACK_BUTTON"] if START else _["CLOSE_BUTTON"],
                     callback_data="settingsback_helper" if START else "close",
+                    icon_custom_emoji_id="6172657075743625817",
                 ),
                 InlineKeyboardButton(text="⏭", callback_data="help_page_4"),
             ],
@@ -154,6 +157,7 @@ def help_pannel_page4(_, START: Union[bool, int] = None):
                 InlineKeyboardButton(
                     text=_["BACK_BUTTON"] if START else _["CLOSE_BUTTON"],
                     callback_data="settingsback_helper" if START else "close",
+                    icon_custom_emoji_id="6172657075743625817",
                 ),
                 InlineKeyboardButton(text="⏭", callback_data="help_page_1"),
             ],

@@ -47,6 +47,7 @@ def stats_buttons(_, status):
                 InlineKeyboardButton(
                     text=_["CLOSE_BUTTON"],
                     callback_data="close",
+                    icon_custom_emoji_id="6172657075743625817",
                 ),
             ],
         ]
@@ -65,6 +66,7 @@ def back_stats_buttons(_):
                 InlineKeyboardButton(
                     text=_["CLOSE_BUTTON"],
                     callback_data="close",
+                    icon_custom_emoji_id="6172657075743625817",
                 ),
             ],
         ]

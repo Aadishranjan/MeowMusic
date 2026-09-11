@@ -56,6 +56,7 @@ def speed_markup(_, chat_id):
                 InlineKeyboardButton(
                     text=_["CLOSE_BUTTON"],
                     callback_data="close",
+                    icon_custom_emoji_id="6172657075743625817",
                 ),
             ],
         ]

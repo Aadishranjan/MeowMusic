@@ -1,4 +1,5 @@
 import pyrogram
+from pyrogram import enums
 from pyrogram import Client
 from pyrogram.enums import ChatMemberStatus, ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -34,6 +35,8 @@ class Nand(Client):
                     InlineKeyboardButton(
                         text="Add Me To Your Group",
                         url=f"https://t.me/{self.username}?startgroup=true",
+                        style=enums.ButtonStyle.PRIMARY,
+                        icon_custom_emoji_id="5258289810082111221",
                     )
                 ]
             ]

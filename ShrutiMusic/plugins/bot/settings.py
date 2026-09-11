@@ -362,6 +362,7 @@ async def authusers_mar(client, CallbackQuery, _):
                         InlineKeyboardButton(
                             text=_["CLOSE_BUTTON"],
                             callback_data=f"close",
+                            icon_custom_emoji_id="6172657075743625817",
                         ),
                     ]
                 ]

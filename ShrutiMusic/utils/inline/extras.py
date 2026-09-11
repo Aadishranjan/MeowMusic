@@ -29,7 +29,7 @@ def botplaylist_markup(_):
     buttons = [
         [
             InlineKeyboardButton(text=_["S_B_9"], url=SUPPORT_GROUP),
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close", icon_custom_emoji_id="6172657075743625817"),
         ],
     ]
     return buttons
@@ -42,6 +42,7 @@ def close_markup(_):
                 InlineKeyboardButton(
                     text=_["CLOSE_BUTTON"],
                     callback_data="close",
+                    icon_custom_emoji_id="6172657075743625817",
                 ),
             ]
         ]
