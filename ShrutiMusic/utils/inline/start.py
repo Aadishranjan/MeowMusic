@@ -48,19 +48,19 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_11"],
-                callback_data="about_page"
-            ),
+                text=_["S_B_2"], 
+                url=config.SUPPORT_GROUP
+                ),
             InlineKeyboardButton(
-                text=_["S_B_12"],
-                callback_data="owner_page"
-            )
+                text=_["S_B_5"],
+                url=f"https://t.me/{config.OWNER_USERNAME.lstrip('@')}",
+                ),
         ],
         [
             InlineKeyboardButton(
-                text=_["E_X_1"],
-                callback_data="fork_repo"
-            ),
+                text=_["S_B_6"], 
+                url=config.SUPPORT_CHANNEL
+                ),
             InlineKeyboardButton(
                 text=_["S_B_5"],
                 url=f"https://t.me/{config.OWNER_USERNAME.lstrip('@')}",
