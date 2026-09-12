@@ -28,6 +28,7 @@ Telegram: https://t.me/ShrutiBots
 """
 
 from typing import Union
+from pyrogram import enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from ShrutiMusic import app
 
@@ -53,13 +54,14 @@ def help_pannel_page1(_, START: Union[bool, int] = None):
                 InlineKeyboardButton(text=_["H_B_10"], callback_data="help_callback hb10"),
             ],
             [
-                InlineKeyboardButton(text="⏮", callback_data="help_page_4"),
+                InlineKeyboardButton(text="⏮", callback_data="help_page_4", style=enums.ButtonStyle.SUCCESS),
                 InlineKeyboardButton(
                     text=_["BACK_BUTTON"] if START else _["CLOSE_BUTTON"],
                     callback_data="settingsback_helper" if START else "close",
-                    icon_custom_emoji_id="6172657075743625817",
+                    icon_custom_emoji_id="5352759161945867747",
+                    style=enums.ButtonStyle.DANGER,
                 ),
-                InlineKeyboardButton(text="⏭", callback_data="help_page_2"),
+                InlineKeyboardButton(text="⏭", callback_data="help_page_2", style=enums.ButtonStyle.SUCCESS),
             ],
         ]
     )
@@ -86,13 +88,14 @@ def help_pannel_page2(_, START: Union[bool, int] = None):
                 InlineKeyboardButton(text=_["H_B_20"], callback_data="help_callback hb20"),
             ],
             [
-                InlineKeyboardButton(text="⏮", callback_data="help_page_1"),
+                InlineKeyboardButton(text="⏮", callback_data="help_page_1", style=enums.ButtonStyle.SUCCESS),
                 InlineKeyboardButton(
                     text=_["BACK_BUTTON"] if START else _["CLOSE_BUTTON"],
                     callback_data="settingsback_helper" if START else "close",
-                    icon_custom_emoji_id="6172657075743625817",
+                    icon_custom_emoji_id="5352759161945867747",
+                    style=enums.ButtonStyle.DANGER,
                 ),
-                InlineKeyboardButton(text="⏭", callback_data="help_page_3"),
+                InlineKeyboardButton(text="⏭", callback_data="help_page_3", style=enums.ButtonStyle.SUCCESS),
             ],
         ]
     )
@@ -119,13 +122,14 @@ def help_pannel_page3(_, START: Union[bool, int] = None):
                 InlineKeyboardButton(text=_["H_B_30"], callback_data="help_callback hb30"),
             ],
             [
-                InlineKeyboardButton(text="⏮", callback_data="help_page_2"),
+                InlineKeyboardButton(text="⏮", callback_data="help_page_2", style=enums.ButtonStyle.SUCCESS),
                 InlineKeyboardButton(
                     text=_["BACK_BUTTON"] if START else _["CLOSE_BUTTON"],
                     callback_data="settingsback_helper" if START else "close",
-                    icon_custom_emoji_id="6172657075743625817",
+                    icon_custom_emoji_id="5352759161945867747",
+                    style=enums.ButtonStyle.DANGER,
                 ),
-                InlineKeyboardButton(text="⏭", callback_data="help_page_4"),
+                InlineKeyboardButton(text="⏭", callback_data="help_page_4", style=enums.ButtonStyle.SUCCESS),
             ],
         ]
     )
@@ -153,13 +157,14 @@ def help_pannel_page4(_, START: Union[bool, int] = None):
                 InlineKeyboardButton(text=_["H_B_36"], callback_data="help_callback hb36"),
             ],   
             [
-                InlineKeyboardButton(text="⏮", callback_data="help_page_3"),
+                InlineKeyboardButton(text="⏮", callback_data="help_page_3", style=enums.ButtonStyle.SUCCESS),
                 InlineKeyboardButton(
                     text=_["BACK_BUTTON"] if START else _["CLOSE_BUTTON"],
                     callback_data="settingsback_helper" if START else "close",
-                    icon_custom_emoji_id="6172657075743625817",
+                    icon_custom_emoji_id="5352759161945867747",
+                    style=enums.ButtonStyle.DANGER,
                 ),
-                InlineKeyboardButton(text="⏭", callback_data="help_page_1"),
+                InlineKeyboardButton(text="⏭", callback_data="help_page_1", style=enums.ButtonStyle.SUCCESS),
             ],
         ]
     )
