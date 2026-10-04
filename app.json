@@ -47,11 +47,6 @@
       "value": "ShrutixMusicBot",
       "required": true
     },
-    "UPSTREAM_REPO": {
-      "description": "URL of your GitHub repository",
-      "value": "https://github.com/NoxxOP/ShrutiMusic",
-      "required": false
-    },
     "STRING_SESSION": {
       "description": "A Pyrogram v2 String Session from Replit.",
       "value": "",

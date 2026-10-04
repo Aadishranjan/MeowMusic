@@ -14,13 +14,13 @@
 
 > **𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐓𝐢𝐦𝐞:** `1-3 seconds` | **𝐒𝐭𝐚𝐛𝐢𝐥𝐢𝐭𝐲:** `99.9% Uptime`
 
-[![Support Channel](https://img.shields.io/badge/Support%20Channel-black?style=for-the-badge&logo=telegram)](https://t.me/ShrutiBots)
-[![Support Group](https://img.shields.io/badge/Support%20Group-black?style=for-the-badge&logo=telegram)](https://t.me/ShrutiSupportChat)
-[![Owner](https://img.shields.io/badge/Owner-black?style=for-the-badge&logo=telegram)](https://t.me/WTF_WhyMeeh)
+[![Support Channel](https://img.shields.io/badge/Support%20Channel-black?style=for-the-badge&logo=telegram)](https://t.me/Yutabots)
+[![Support Group](https://img.shields.io/badge/Support%20Group-black?style=for-the-badge&logo=telegram)](https://t.me/Yutabots)
+[![Owner](https://img.shields.io/badge/Owner-black?style=for-the-badge&logo=telegram)](https://t.me/ezzyseller)
 
-[![Forks](https://img.shields.io/github/forks/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)](https://github.com/NoxxOP/ShrutiMusic/fork)
-[![Stars](https://img.shields.io/github/stars/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)](https://github.com/NoxxOP/ShrutiMusic/stargazers)
-[![Contributors](https://img.shields.io/github/contributors/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)](https://github.com/NoxxOP/ShrutiMusic/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/Aadishranjan/MeowMusic?color=black&logo=github&logoColor=black&style=for-the-badge)](https://github.com/Aadishranjan/MeowMusic/fork)
+[![Stars](https://img.shields.io/github/stars/Aadishranjan/MeowMusic?color=black&logo=github&logoColor=black&style=for-the-badge)](https://github.com/Aadishranjan/MeowMusic/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/Aadishranjan/MeowMusic?color=black&logo=github&logoColor=black&style=for-the-badge)](https://github.com/Aadishranjan/MeowMusic/graphs/contributors)
 
 </div>
 
@@ -32,8 +32,8 @@
 
 | **𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦** | **𝐃𝐞𝐩𝐥𝐨𝐲 𝐍𝐨𝐰** | **𝐈𝐧𝐟𝐨** |
 |:---:|:---:|:---:|
-| **𝐇𝐞𝐫𝐨𝐤𝐮** | [![Deploy](https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku)](https://dashboard.heroku.com/new?template=https://github.com/NoxxOP/ShrutiMusic) | 𝐎𝐧𝐞-𝐂𝐥𝐢𝐜𝐤 𝐃𝐞𝐩𝐥𝐨𝐲 |
-| **𝐑𝐞𝐧𝐝𝐞𝐫** | [![Deploy](https://img.shields.io/badge/Deploy%20On%20Render-black?style=for-the-badge&logo=render)](https://render.com/deploy?repo=https://github.com/NoxxOP/ShrutiMusic) | 𝟏𝟎𝟎% 𝐅𝐫𝐞𝐞 |
+| **𝐇𝐞𝐫𝐨𝐤𝐮** | [![Deploy](https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku)](https://dashboard.heroku.com/new?template=https://github.com/Aadishranjan/MeowMusic) | 𝐎𝐧𝐞-𝐂𝐥𝐢𝐜𝐤 𝐃𝐞𝐩𝐥𝐨𝐲 |
+| **𝐑𝐞𝐧𝐝𝐞𝐫** | [![Deploy](https://img.shields.io/badge/Deploy%20On%20Render-black?style=for-the-badge&logo=render)](https://render.com/deploy?repo=https://github.com/Aadishranjan/MeowMusic) | 𝟏𝟎𝟎% 𝐅𝐫𝐞𝐞 |
 | **𝐒𝐢𝐦𝐩𝐥𝐞 𝐁𝐨𝐭** | [![View](https://img.shields.io/badge/Simple%20Bot-black?style=for-the-badge&logo=github)](https://github.com/NoxxOP/ShrutixMusic) | 𝐋𝐢𝐠𝐡𝐭𝐰𝐞𝐢𝐠𝐡𝐭 |
 
 </div>
@@ -111,7 +111,7 @@ sudo apt-get install -y nodejs
 ### **𝐒𝐭𝐞𝐩 𝟒: 𝐂𝐥𝐨𝐧𝐞 𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐲**
 
 ```bash
-git clone https://github.com/NoxxOP/ShrutiMusic
+git clone https://github.com/Aadishranjan/MeowMusic
 ```
 
 ```bash
@@ -216,7 +216,7 @@ bash start
 
 <div align="center">
 
-[![Deploy to Heroku](https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku)](https://dashboard.heroku.com/new?template=https://github.com/NoxxOP/ShrutiMusic)
+[![Deploy to Heroku](https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku)](https://dashboard.heroku.com/new?template=https://github.com/Aadishranjan/MeowMusic)
 
 </div>
 
@@ -279,10 +279,10 @@ bash start
 
 <div align="center">
 
-![Repo Size](https://img.shields.io/github/repo-size/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)
-![License](https://img.shields.io/github/license/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/NoxxOP/ShrutiMusic?color=blue&logo=github&logoColor=green&style=for-the-badge)
+![Repo Size](https://img.shields.io/github/repo-size/Aadishranjan/MeowMusic?color=black&logo=github&logoColor=black&style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/Aadishranjan/MeowMusic?color=black&logo=github&logoColor=black&style=for-the-badge)
+![License](https://img.shields.io/github/license/Aadishranjan/MeowMusic?color=black&logo=github&logoColor=black&style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/Aadishranjan/MeowMusic?color=blue&logo=github&logoColor=green&style=for-the-badge)
 
 </div>
 
@@ -294,7 +294,7 @@ bash start
 
 **𝐌𝐚𝐢𝐧 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫**
 
-[![NoxxOP](https://img.shields.io/badge/NoxxOP-black?style=for-the-badge&logo=github)](https://github.com/NoxxOP)
+[![Aadish](https://img.shields.io/badge/Aadish-black?style=for-the-badge&logo=github)](https://github.com/Aadishranjan)
 
 **𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐓𝐡𝐚𝐧𝐤𝐬 𝐭𝐨 𝐀𝐥𝐥 𝐂𝐨𝐧𝐭𝐫𝐢𝐛𝐮𝐭𝐨𝐫𝐬**
 
@@ -318,12 +318,12 @@ bash start
 
 | **𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥** | **𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩** |
 |:---:|:---:|
-| [![Channel](https://img.shields.io/badge/Join%20Channel-black?style=for-the-badge&logo=telegram)](https://t.me/ShrutiBots) | [![Group](https://img.shields.io/badge/Join%20Group-black?style=for-the-badge&logo=telegram)](https://t.me/ShrutiSupportChat) |
+| [![Channel](https://img.shields.io/badge/Join%20Channel-black?style=for-the-badge&logo=telegram)](https://t.me/Yutabots) | [![Group](https://img.shields.io/badge/Join%20Group-black?style=for-the-badge&logo=telegram)](https://t.me/Yutabots) |
 | Latest Updates | 24/7 Help & Support |
 
 ---
 
-<img src="https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F%20by-NoxxOP-orange?style=for-the-badge&logo=heart" alt="Made with love">
+<img src="https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F%20by-Aadish-orange?style=for-the-badge&logo=heart" alt="Made with love">
 
 ---
 

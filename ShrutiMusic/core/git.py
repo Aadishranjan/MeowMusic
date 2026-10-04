@@ -31,6 +31,8 @@ import config
 
 from ..logging import LOGGER
 
+UPSTREAM_REPO = "https://github.com/Aadishranjan/MeowMusic"
+
 
 def install_req(cmd: str) -> Tuple[str, str, int, int]:
     async def install_requirements():
@@ -52,13 +54,12 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
 
 
 def git():
-    REPO_LINK = config.UPSTREAM_REPO
+    REPO_LINK = UPSTREAM_REPO
+    upstream_repo = REPO_LINK
     if config.GIT_TOKEN:
         GIT_USERNAME = REPO_LINK.split("com/")[1].split("/")[0]
         TEMP_REPO = REPO_LINK.split("https://")[1]
-        UPSTREAM_REPO = f"https://{GIT_USERNAME}:{config.GIT_TOKEN}@{TEMP_REPO}"
-    else:
-        UPSTREAM_REPO = config.UPSTREAM_REPO
+        upstream_repo = f"https://{GIT_USERNAME}:{config.GIT_TOKEN}@{TEMP_REPO}"
     try:
         repo = Repo()
         LOGGER(__name__).info(f"Git Client Found [VPS DEPLOYER]")
@@ -69,7 +70,7 @@ def git():
         if "origin" in repo.remotes:
             origin = repo.remote("origin")
         else:
-            origin = repo.create_remote("origin", UPSTREAM_REPO)
+            origin = repo.create_remote("origin", upstream_repo)
         origin.fetch()
         repo.create_head(
             config.UPSTREAM_BRANCH,
@@ -80,7 +81,7 @@ def git():
         )
         repo.heads[config.UPSTREAM_BRANCH].checkout(True)
         try:
-            repo.create_remote("origin", config.UPSTREAM_REPO)
+            repo.create_remote("origin", upstream_repo)
         except BaseException:
             pass
         nrs = repo.remote("origin")

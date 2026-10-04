@@ -189,7 +189,6 @@ nano .env
 - `OWNER_ID` (Your Telegram user ID)
 - `OWNER_USERNAME` (Your Telegram username without @)
 - `BOT_USERNAME` (Your bot's username without @)
-- `UPSTREAM_REPO` (GitHub repo URL for updates Recommend : Original Source)
 - `STRING_SESSION` (Generate using @Sessionbbbot)
 - `GIT_TOKEN` (If your repo is private)
 - `LOG_GROUP_ID` (Log group/channel ID starting with -100)
